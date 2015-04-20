@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "CoreAnimLaunchImageView.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +18,20 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    
+    UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    window.rootViewController=[[ViewController alloc] init];
+    
+    self.window=window;
+    
+    
+    
+    [window makeKeyAndVisible];
+    
+    [CoreAnimLaunchImageView show];
+    
     // Override point for customization after application launch.
     return YES;
 }
