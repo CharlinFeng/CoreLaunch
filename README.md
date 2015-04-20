@@ -7,7 +7,11 @@
 ####框架特性：<br />
 >1.自用。
 
+<br />
 
+####框架依赖：<br />
+>1.CoreExtend<br />
+>1.CoreCategory
 
 <br /><br />
 
