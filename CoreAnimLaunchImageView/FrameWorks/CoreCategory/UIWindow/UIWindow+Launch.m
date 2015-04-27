@@ -9,6 +9,7 @@
 #import "UIWindow+Launch.h"
 
 
+
 @implementation UIWindow (Launch)
 
 
@@ -32,10 +33,6 @@
     //返回
     return window;
 }
-
-
-
-
 
 
 

@@ -8,9 +8,9 @@
 
 #import "CoreAnimLaunchImageView.h"
 #import "UIImage+Extend.h"
-#import "CAAnimation+Make.h"
+#import "CALayer+Transition.h"
 
-const CGFloat ShowTimeDuration = .1f;
+const CGFloat ShowTimeDuration = 1.1f;
 
 @implementation CoreAnimLaunchImageView
 
@@ -27,7 +27,7 @@ const CGFloat ShowTimeDuration = .1f;
     
     //设置frame
     imageV.frame = [UIScreen mainScreen].bounds;
-
+    
     //设置图片
     imageV.image = image;
     
@@ -50,7 +50,7 @@ const CGFloat ShowTimeDuration = .1f;
 -(void)dismiss{
     
     //添加一个转场动画
-    [self.superview.layer addAnimation:[CAAnimation transitionWithAnimType:CAAnimationTransitionAnimTypePageCurl subType:CAAnimationTransitionSubtypesFromBotoom curve:CAAnimationTransitionCurveEaseInEaseOut duration:3.0f] forKey:@"RandomTransition"];
+    [self.superview.layer transitionWithAnimType:TransitionAnimTypePageCurl subType:TransitionSubtypesFromBotoom curve:TransitionCurveEaseOut duration:3.0f];
     
     [self removeFromSuperview];
 }

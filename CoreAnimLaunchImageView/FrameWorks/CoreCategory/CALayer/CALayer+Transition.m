@@ -1,16 +1,15 @@
 //
-//  CAAnimation+Make.m
-//  4s
+//  CALayer+Transition.m
+//  Carpenter
 //
-//  Created by muxi on 15/3/11.
-//  Copyright (c) 2015年 muxi. All rights reserved.
+//  Created by 冯成林 on 15/4/23.
+//  Copyright (c) 2015年 冯成林. All rights reserved.
 //
 
-#import "CAAnimation+Make.h"
+#import "CALayer+Transition.h"
 
+@implementation CALayer (Transition)
 
-
-@implementation CAAnimation (Make)
 
 /**
  *  转场动画
@@ -22,7 +21,14 @@
  *
  *  @return 转场动画实例
  */
-+(CATransition *)transitionWithAnimType:(CAAnimationTransitionAnimType)animType subType:(CAAnimationTransitionSubType)subType curve:(CAAnimationTransitionCurve)curve duration:(CGFloat)duration{
+-(CATransition *)transitionWithAnimType:(TransitionAnimType)animType subType:(TransitionSubType)subType curve:(TransitionCurve)curve duration:(CGFloat)duration{
+    
+    NSString *key = @"transition";
+    
+    if([self animationForKey:key]!=nil){
+        [self removeAnimationForKey:key];
+    }
+    
     
     CATransition *transition=[CATransition animation];
     
@@ -40,7 +46,9 @@
     
     //完成动画删除
     transition.removedOnCompletion = YES;
-
+    
+    [self addAnimation:transition forKey:key];
+    
     return transition;
 }
 
@@ -49,12 +57,12 @@
 /*
  *  返回动画曲线
  */
-+(NSString *)curve:(CAAnimationTransitionCurve)curve{
+-(NSString *)curve:(TransitionCurve)curve{
     
     //曲线数组
     NSArray *funcNames=@[kCAMediaTimingFunctionDefault,kCAMediaTimingFunctionEaseIn,kCAMediaTimingFunctionEaseInEaseOut,kCAMediaTimingFunctionEaseOut,kCAMediaTimingFunctionLinear];
     
-    return [self objFromArray:funcNames index:curve isRamdom:(CAAnimationTransitionCurveRamdom == curve)];
+    return [self objFromArray:funcNames index:curve isRamdom:(TransitionCurveRamdom == curve)];
 }
 
 
@@ -62,12 +70,12 @@
 /*
  *  返回动画方向
  */
-+(NSString *)animaSubtype:(CAAnimationTransitionSubType)subType{
+-(NSString *)animaSubtype:(TransitionSubType)subType{
     
     //设置转场动画的方向
     NSArray *subtypes=@[kCATransitionFromTop,kCATransitionFromLeft,kCATransitionFromBottom,kCATransitionFromRight];
     
-    return [self objFromArray:subtypes index:subType isRamdom:(CAAnimationTransitionSubtypesFromRamdom == subType)];
+    return [self objFromArray:subtypes index:subType isRamdom:(TransitionSubtypesFromRamdom == subType)];
 }
 
 
@@ -76,12 +84,12 @@
 /*
  *  返回动画类型
  */
-+(NSString *)animaTypeWithTransitionType:(CAAnimationTransitionAnimType)type{
+-(NSString *)animaTypeWithTransitionType:(TransitionAnimType)type{
     
     //设置转场动画的类型
     NSArray *animArray=@[@"rippleEffect",@"suckEffect",@"pageCurl",@"oglFlip",@"cube",@"reveal",@"pageUnCurl"];
     
-    return [self objFromArray:animArray index:type isRamdom:(CAAnimationTransitionAnimTypeRamdom == type)];
+    return [self objFromArray:animArray index:type isRamdom:(TransitionAnimTypeRamdom == type)];
 }
 
 
@@ -89,11 +97,11 @@
 /*
  *  统一从数据返回对象
  */
-+(id)objFromArray:(NSArray *)array index:(NSUInteger)index isRamdom:(BOOL)isRamdom{
+-(id)objFromArray:(NSArray *)array index:(NSUInteger)index isRamdom:(BOOL)isRamdom{
     
     NSUInteger count = array.count;
     
-    NSUInteger i = isRamdom?arc4random_uniform(count) : index;
+    NSUInteger i = isRamdom?arc4random_uniform((u_int32_t)count) : index;
     
     return array[i];
 }
