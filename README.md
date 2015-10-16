@@ -61,3 +61,6 @@
     [CoreLaunchPro animWithWindow:self.window image:nil];
 
 ![image](https://github.com/CharlinFeng/Resource/blob/master/CoreLaunch/4.gif)<br /><br />
+
+
+#### 注：每个方法都可传image，这是一种长远考虑，涉及根控制器切换与版本新特性。
