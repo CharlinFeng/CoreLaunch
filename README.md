@@ -1,55 +1,61 @@
 
-    Charlin出框架的目标：简单、易用、实用、高度封装、绝对解耦！
+<br/><br/><br/>
+一键启动动画 （持续关注[信息公告牌](https://github.com/CharlinFeng/Show)）
+==========
+.Xcode7
+.Objective-C
+.iOS 7.0~
 
-# CoreAnimLaunchImageView
-    启动动画视图
-<br />
-####框架特性：<br />
->1.一键集成启动动画视图。
+<br/><br/><br/>
+快速集成
+==========
 
-<br />
+###您只需一句代码即可集成！
+<br/>
+#### 1.请不要直接拖拽`CoreLaunch`文件夹到您的项目，此项目是4 in 1合集。如果您是测试，你可以直接拖拽`CoreLaunch`文件夹到您的项目。
+<br/>
+#### 2.再次请您明确，`CoreLaunch`仅仅是一个统称，`CoreLaunch`有4种效果任你挑选，并且这4种效果是放在4个文件夹，他们是相互独立的。
 
+> .Lite版<br/>
+> .Plus版<br/>
+> .Cool版<br/>
+> .Pro版<br/>
 
-<br /><br />
-
-组织信息 Charlin Feng：
-===============
-<br />
-#### 特别群：请西部省市朋友实名加入组织。其他地区朋友请添加2-4群：谢谢。
-<br />
-【西部区域】西部大开发群号： 473185026  -追赶北上广！为振兴西部IT而努力！<br />
-热烈欢迎中国西部各省市的从事iOS开发朋友实名进群！本群为是聚集西部零散开发者，大家齐心协力共进退！ <br /><br />
-
-【全国可加】四群： 347446259<br />
-新开，可加！欢迎全国朋友加入组织 <br /><br />
-
-【全国可加】三群： 474377358<br />
-新开，可加！欢迎全国朋友加入组织 <br /><br />
-
-【全国可加】二群： 369870753<br />
-可加<br /><br />
-
-【全国可加】一群：163865401<br />
-已爆满，加不上了<br /><br />
-
-<br /><br />
-
-####集成方式：<br />
-    在window成为主窗口之后，直接调用即可！
-     [CoreAnimLaunchImageView show];
-
-<br />
-
-####框架依赖：<br />
->1.CoreExtend<br />
->1.CoreCategory
-
-<br /><br />
+注：您只需使用其中任一即可。他们之前没有任何耦合性。
 
 
------
-    CoreAnimLaunchImageView 启动动画视图
------
+<br/><br/><br/>
+使用示例
+==========
 
-<br /><br />
+<br/><br/>
+#### 1. Lite版
 
+    /** Lite版本 */
+    [CoreLaunchLite animWithWindow:self.window image:nil];
+
+![image](https://github.com/CharlinFeng/Resource/blob/master/CoreLaunch/1.gif)<br /><br />
+
+<br/><br/>
+#### 2. Plus版
+
+    /** Lite版本 */
+    [CoreLaunchPlus animWithWindow:self.window image:nil];
+
+![image](https://github.com/CharlinFeng/Resource/blob/master/CoreLaunch/2.gif)<br /><br />
+
+<br/><br/>
+#### 3.Cool版
+
+    /** Lite版本 */
+    [CoreLaunchCool animWithWindow:self.window image:nil];
+
+![image](https://github.com/CharlinFeng/Resource/blob/master/CoreLaunch/3.gif)<br /><br />
+
+<br/><br/>
+#### 4. Pro版
+
+    /** Lite版本 */
+    [CoreLaunchPro animWithWindow:self.window image:nil];
+
+![image](https://github.com/CharlinFeng/Resource/blob/master/CoreLaunch/4.gif)<br /><br />
