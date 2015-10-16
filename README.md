@@ -48,6 +48,7 @@
 
 <br/><br/>
 #### 3.Cool版
+##### 注：此效果为转场封装，默认效果为动画随机，方向随机，速率随机，您也可以到`CoreLaunchCool.m`自行配置您想要的效果。
 
     /** Cool版本 */
     [CoreLaunchCool animWithWindow:self.window image:nil];
