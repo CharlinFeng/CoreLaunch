@@ -57,6 +57,8 @@
 <br/><br/>
 #### 4. Pro版
 
+##### 注：本版本中使用了一个中间控制器ProVC，他涉及了比较复杂的循环引用，不过已经处理，您可以查看控制台他是会安全释放的。
+
     /** Pro版本 */
     [CoreLaunchPro animWithWindow:self.window image:nil];
 
