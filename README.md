@@ -1,4 +1,4 @@
-![image](https://github.com/CharlinFeng/Resource/blob/master/CoreLaunch/logo.gif)<br /><br />
+![image](https://github.com/CharlinFeng/Resource/blob/master/CoreLaunch/logo.png)<br /><br />
 
 一键启动动画 （持续关注[信息公告牌](https://github.com/CharlinFeng/Show)）
 ==========
