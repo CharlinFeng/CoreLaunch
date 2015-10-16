@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1AH-t2-455">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="3Nw-VI-uwu">
+            <objects>
+                <tabBarController id="1AH-t2-455" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="uQN-0k-OYb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="fda-IQ-zAI" kind="relationship" relationship="viewControllers" id="VuH-W2-bIp"/>
+                        <segue destination="qGa-aM-PvP" kind="relationship" relationship="viewControllers" id="FRn-4D-DRv"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QVk-Fx-FfS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-251" y="151"/>
+        </scene>
+        <!--时点首页-->
+        <scene sceneID="RJh-hv-pdF">
+            <objects>
+                <navigationController id="fda-IQ-zAI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="时点首页" id="Qu2-Kf-of2"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eGY-fb-YVs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="7Ah-AW-1ZY" kind="relationship" relationship="rootViewController" id="7km-ZM-wwi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m3U-nk-BVW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="399" y="9"/>
+        </scene>
+        <!--成都时点软件出品-->
+        <scene sceneID="Ucl-5B-Fty">
+            <objects>
+                <viewController id="7Ah-AW-1ZY" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KYf-ih-kCQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="tnB-XP-uTY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="H9L-Nu-Z8z">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 一键启动动画 " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URI-Az-aiR">
+                                <rect key="frame" x="20" y="80" width="560" height="144"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.5450980392" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  一句代码集成：   1.Lite版   2.Plus版   3.Cool版   4.Pro版 " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xx7-Px-Ork">
+                                <rect key="frame" x="20" y="270" width="560" height="263"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.78823529410000004" green="0.78823529410000004" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="URI-Az-aiR" firstAttribute="leading" secondItem="H9L-Nu-Z8z" secondAttribute="leading" constant="20" id="2NK-0t-Elc"/>
+                            <constraint firstAttribute="trailing" secondItem="URI-Az-aiR" secondAttribute="trailing" constant="20" id="N4U-Nh-BwA"/>
+                            <constraint firstAttribute="trailing" secondItem="Xx7-Px-Ork" secondAttribute="trailing" constant="20" id="PvG-Sy-E7I"/>
+                            <constraint firstItem="URI-Az-aiR" firstAttribute="top" secondItem="KYf-ih-kCQ" secondAttribute="bottom" constant="16" id="dKM-k6-bWj"/>
+                            <constraint firstItem="Xx7-Px-Ork" firstAttribute="leading" secondItem="H9L-Nu-Z8z" secondAttribute="leading" constant="20" id="dh1-A3-xeh"/>
+                            <constraint firstItem="tnB-XP-uTY" firstAttribute="top" secondItem="Xx7-Px-Ork" secondAttribute="bottom" constant="18" id="tGM-D2-uQR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="成都时点软件出品" id="qag-ht-Uhy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aSP-CT-UGA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1123" y="9"/>
+        </scene>
+        <!--时点业务-->
+        <scene sceneID="3QW-Gh-L1l">
+            <objects>
+                <viewController id="yOo-ZX-VhX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vBP-Dj-gjv"/>
+                        <viewControllerLayoutGuide type="bottom" id="HPH-oN-g8C"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ERY-CE-Z4J">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 时点科技 ios-android.cn  专做全国App外包业务  欢迎业务合作 " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Cf-jj-eoo">
+                                <rect key="frame" x="20" y="84" width="560" height="230"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.5450980392" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小公司求生存，以上是赤裸裸的广告 您可以忽略，也可以支持。谢谢！" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BvR-bg-3PB">
+                                <rect key="frame" x="20" y="432" width="560" height="39"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9Cf-jj-eoo" firstAttribute="leading" secondItem="ERY-CE-Z4J" secondAttribute="leading" constant="20" id="1DK-0J-o8E"/>
+                            <constraint firstAttribute="trailing" secondItem="9Cf-jj-eoo" secondAttribute="trailing" constant="20" id="1Db-L7-2Fc"/>
+                            <constraint firstAttribute="trailing" secondItem="BvR-bg-3PB" secondAttribute="trailing" constant="20" id="Mq2-xb-UPH"/>
+                            <constraint firstItem="9Cf-jj-eoo" firstAttribute="top" secondItem="vBP-Dj-gjv" secondAttribute="bottom" constant="20" id="N06-6r-Ez8"/>
+                            <constraint firstItem="BvR-bg-3PB" firstAttribute="leading" secondItem="ERY-CE-Z4J" secondAttribute="leading" constant="20" id="VPy-eU-kgn"/>
+                            <constraint firstItem="HPH-oN-g8C" firstAttribute="top" secondItem="BvR-bg-3PB" secondAttribute="bottom" constant="80" id="gsf-kg-5kU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="时点业务" id="qbw-Ac-Kra"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uKC-TI-4PR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1123" y="697"/>
+        </scene>
+        <!--时点业务-->
+        <scene sceneID="s6H-8N-rMR">
+            <objects>
+                <navigationController id="qGa-aM-PvP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="时点业务" id="Lqp-MO-6K7"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QB5-36-Xua">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="yOo-ZX-VhX" kind="relationship" relationship="rootViewController" id="cnR-PH-Lip"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o5b-GS-Rxy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="399" y="697"/>
+        </scene>
+    </scenes>
+</document>
