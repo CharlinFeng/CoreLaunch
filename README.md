@@ -1,10 +1,10 @@
+![image](https://github.com/CharlinFeng/Resource/blob/master/CoreLaunch/logo.gif)<br /><br />
 
-<br/><br/><br/>
 一键启动动画 （持续关注[信息公告牌](https://github.com/CharlinFeng/Show)）
 ==========
-.Xcode7
-.Objective-C
-.iOS 7.0~
+### .Xcode7
+### .Objective-C
+### .iOS 7.0~
 
 <br/><br/><br/>
 快速集成
@@ -21,7 +21,9 @@
 > .Cool版<br/>
 > .Pro版<br/>
 
-注：您只需使用其中任一即可。他们之前没有任何耦合性。
+#### 3.一句代码集成请放在AppDelegate中的window成为keyWindow之后即可。
+
+注：您只需使用CoreLaunch4 in 1合集其中任一一个即可。并且他们之前没有任何耦合性，完全可以单独使用。
 
 
 <br/><br/><br/>
