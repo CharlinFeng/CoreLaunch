@@ -41,7 +41,7 @@
 <br/><br/>
 #### 2. Plus版
 
-    /** Lite版本 */
+    /** Plus版本 */
     [CoreLaunchPlus animWithWindow:self.window image:nil];
 
 ![image](https://github.com/CharlinFeng/Resource/blob/master/CoreLaunch/2.gif)<br /><br />
@@ -49,7 +49,7 @@
 <br/><br/>
 #### 3.Cool版
 
-    /** Lite版本 */
+    /** Cool版本 */
     [CoreLaunchCool animWithWindow:self.window image:nil];
 
 ![image](https://github.com/CharlinFeng/Resource/blob/master/CoreLaunch/3.gif)<br /><br />
@@ -57,7 +57,7 @@
 <br/><br/>
 #### 4. Pro版
 
-    /** Lite版本 */
+    /** Pro版本 */
     [CoreLaunchPro animWithWindow:self.window image:nil];
 
 ![image](https://github.com/CharlinFeng/Resource/blob/master/CoreLaunch/4.gif)<br /><br />
