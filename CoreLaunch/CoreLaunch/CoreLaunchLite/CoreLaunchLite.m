@@ -64,7 +64,11 @@
     
     if(iphone6Plus_5_5) imageName = @"LaunchImage-800-Portrait-736h";
     
-    return [UIImage imageNamed:imageName];
+    UIImage *image = [UIImage imageNamed:imageName];
+    
+    NSAssert(image != nil, @"Charlin Feng提示您：请添加启动图片！");
+    
+    return image;
 }
 
 

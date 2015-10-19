@@ -17,7 +17,7 @@
 
 #define iphone6Plus_5_5 ([UIScreen mainScreen].bounds.size.height==736.0f || [UIScreen mainScreen].bounds.size.height==414.0f)
 
-static const CGFloat duration = 1.4f;
+static const CGFloat duration = 1.5f;
 
 @implementation CoreLaunchPlus
 
@@ -31,7 +31,7 @@ static const CGFloat duration = 1.4f;
     
     [window.rootViewController.view addSubview:imageV];
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         
         [self rotation:imageV.layer];
         
@@ -58,7 +58,11 @@ static const CGFloat duration = 1.4f;
     
     if(iphone6Plus_5_5) imageName = @"LaunchImage-800-Portrait-736h";
     
-    return [UIImage imageNamed:imageName];
+    UIImage *image = [UIImage imageNamed:imageName];
+    
+    NSAssert(image != nil, @"Charlin Feng提示您：请添加启动图片！");
+    
+    return image;
 }
 
 
