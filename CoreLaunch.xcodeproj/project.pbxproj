@@ -17,6 +17,10 @@
 		8919AFB21BD096BC0068A38E /* CoreLaunchCool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8919AFB11BD096BC0068A38E /* CoreLaunchCool.m */; settings = {ASSET_TAGS = (); }; };
 		8919AFB51BD0972A0068A38E /* CALayer+Cool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8919AFB41BD0972A0068A38E /* CALayer+Cool.m */; settings = {ASSET_TAGS = (); }; };
 		8919AFB91BD0A0DD0068A38E /* CoreLaunchPro.m in Sources */ = {isa = PBXBuildFile; fileRef = 8919AFB81BD0A0DD0068A38E /* CoreLaunchPro.m */; settings = {ASSET_TAGS = (); }; };
+		8953C46E1BDF6159000066BF /* CoreLaunchFlip.m in Sources */ = {isa = PBXBuildFile; fileRef = 8953C4661BDF6159000066BF /* CoreLaunchFlip.m */; settings = {ASSET_TAGS = (); }; };
+		8953C46F1BDF6159000066BF /* JDFlipImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8953C4691BDF6159000066BF /* JDFlipImageView.m */; settings = {ASSET_TAGS = (); }; };
+		8953C4701BDF6159000066BF /* JDFlipNumberViewImageFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8953C46B1BDF6159000066BF /* JDFlipNumberViewImageFactory.m */; settings = {ASSET_TAGS = (); }; };
+		8953C4711BDF6159000066BF /* UIView+JDFlipImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8953C46D1BDF6159000066BF /* UIView+JDFlipImageView.m */; settings = {ASSET_TAGS = (); }; };
 		89581F2F1BD0C44C00A8ED5F /* CoreLaunchPlus.m in Sources */ = {isa = PBXBuildFile; fileRef = 89581F2E1BD0C44C00A8ED5F /* CoreLaunchPlus.m */; settings = {ASSET_TAGS = (); }; };
 		89581F401BD0C9CA00A8ED5F /* CYNavigationControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89581F351BD0C9CA00A8ED5F /* CYNavigationControllerDelegate.m */; settings = {ASSET_TAGS = (); }; };
 		89581F411BD0C9CA00A8ED5F /* CYPortalTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 89581F371BD0C9CA00A8ED5F /* CYPortalTransitionAnimator.m */; settings = {ASSET_TAGS = (); }; };
@@ -46,6 +50,14 @@
 		8919AFB41BD0972A0068A38E /* CALayer+Cool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Cool.m"; sourceTree = "<group>"; };
 		8919AFB71BD0A0DD0068A38E /* CoreLaunchPro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreLaunchPro.h; sourceTree = "<group>"; };
 		8919AFB81BD0A0DD0068A38E /* CoreLaunchPro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreLaunchPro.m; sourceTree = "<group>"; };
+		8953C4651BDF6159000066BF /* CoreLaunchFlip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreLaunchFlip.h; sourceTree = "<group>"; };
+		8953C4661BDF6159000066BF /* CoreLaunchFlip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreLaunchFlip.m; sourceTree = "<group>"; };
+		8953C4681BDF6159000066BF /* JDFlipImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDFlipImageView.h; sourceTree = "<group>"; };
+		8953C4691BDF6159000066BF /* JDFlipImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDFlipImageView.m; sourceTree = "<group>"; };
+		8953C46A1BDF6159000066BF /* JDFlipNumberViewImageFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDFlipNumberViewImageFactory.h; sourceTree = "<group>"; };
+		8953C46B1BDF6159000066BF /* JDFlipNumberViewImageFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDFlipNumberViewImageFactory.m; sourceTree = "<group>"; };
+		8953C46C1BDF6159000066BF /* UIView+JDFlipImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JDFlipImageView.h"; sourceTree = "<group>"; };
+		8953C46D1BDF6159000066BF /* UIView+JDFlipImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JDFlipImageView.m"; sourceTree = "<group>"; };
 		89581F2D1BD0C44C00A8ED5F /* CoreLaunchPlus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreLaunchPlus.h; sourceTree = "<group>"; };
 		89581F2E1BD0C44C00A8ED5F /* CoreLaunchPlus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreLaunchPlus.m; sourceTree = "<group>"; };
 		89581F341BD0C9CA00A8ED5F /* CYNavigationControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYNavigationControllerDelegate.h; sourceTree = "<group>"; };
@@ -119,6 +131,7 @@
 		8919AFAA1BD088DC0068A38E /* CoreLaunch */ = {
 			isa = PBXGroup;
 			children = (
+				8953C4641BDF6159000066BF /* CoreLaunchFlip */,
 				89581F2C1BD0C44C00A8ED5F /* CoreLaunchPlus */,
 				8919AFB61BD0A0DD0068A38E /* CoreLaunchPro */,
 				8919AFAF1BD096B10068A38E /* CoreLaunchCool */,
@@ -157,6 +170,29 @@
 				89581F471BD0CB5400A8ED5F /* ProVC.m */,
 			);
 			path = CoreLaunchPro;
+			sourceTree = "<group>";
+		};
+		8953C4641BDF6159000066BF /* CoreLaunchFlip */ = {
+			isa = PBXGroup;
+			children = (
+				8953C4651BDF6159000066BF /* CoreLaunchFlip.h */,
+				8953C4661BDF6159000066BF /* CoreLaunchFlip.m */,
+				8953C4671BDF6159000066BF /* Lib */,
+			);
+			path = CoreLaunchFlip;
+			sourceTree = "<group>";
+		};
+		8953C4671BDF6159000066BF /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				8953C4681BDF6159000066BF /* JDFlipImageView.h */,
+				8953C4691BDF6159000066BF /* JDFlipImageView.m */,
+				8953C46A1BDF6159000066BF /* JDFlipNumberViewImageFactory.h */,
+				8953C46B1BDF6159000066BF /* JDFlipNumberViewImageFactory.m */,
+				8953C46C1BDF6159000066BF /* UIView+JDFlipImageView.h */,
+				8953C46D1BDF6159000066BF /* UIView+JDFlipImageView.m */,
+			);
+			path = Lib;
 			sourceTree = "<group>";
 		};
 		89581F2C1BD0C44C00A8ED5F /* CoreLaunchPlus */ = {
@@ -265,6 +301,9 @@
 				89581F421BD0C9CA00A8ED5F /* CYPortalTransitionContext.m in Sources */,
 				8919AFAE1BD08CB40068A38E /* CoreLaunchLite.m in Sources */,
 				89581F401BD0C9CA00A8ED5F /* CYNavigationControllerDelegate.m in Sources */,
+				8953C46F1BDF6159000066BF /* JDFlipImageView.m in Sources */,
+				8953C46E1BDF6159000066BF /* CoreLaunchFlip.m in Sources */,
+				8953C4711BDF6159000066BF /* UIView+JDFlipImageView.m in Sources */,
 				89581F411BD0C9CA00A8ED5F /* CYPortalTransitionAnimator.m in Sources */,
 				89581F481BD0CB5400A8ED5F /* ProVC.m in Sources */,
 				89581F451BD0C9CA00A8ED5F /* UIViewController+PortalTransition.m in Sources */,
@@ -272,6 +311,7 @@
 				8919AF951BD088A80068A38E /* main.m in Sources */,
 				8919AFB51BD0972A0068A38E /* CALayer+Cool.m in Sources */,
 				8919AFB21BD096BC0068A38E /* CoreLaunchCool.m in Sources */,
+				8953C4701BDF6159000066BF /* JDFlipNumberViewImageFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,6 +11,7 @@
 #import "CoreLaunchCool.h"
 #import "CoreLaunchPro.h"
 #import "CoreLaunchPlus.h"
+#import "CoreLaunchFlip.h"
 
 @interface AppDelegate ()
 
@@ -25,13 +26,16 @@
 //    [CoreLaunchLite animWithWindow:self.window image:nil];
     
     /** Plus版本 */
-    [CoreLaunchPlus animWithWindow:self.window image:nil];
+//    [CoreLaunchPlus animWithWindow:self.window image:nil];
     
     /** Cool版本 */
 //    [CoreLaunchCool animWithWindow:self.window image:nil];
     
     /** Pro版本 */
 //    [CoreLaunchPro animWithWindow:self.window image:nil];
+    
+    /** Flip版本 */
+    [CoreLaunchFlip animWithWindow:self.window image:nil];
     
     return YES;
 }
