@@ -12,18 +12,19 @@
 
 ###您只需一句代码即可集成！
 <br/>
-#### 1.请不要直接拖拽`CoreLaunch`文件夹到您的项目，此项目是4 in 1合集。如果您是测试，你可以直接拖拽`CoreLaunch`文件夹到您的项目。
+#### 1.请不要直接拖拽`CoreLaunch`文件夹到您的项目，此项目是5 in 1合集。如果您是测试，你可以直接拖拽`CoreLaunch`文件夹到您的项目。
 <br/>
-#### 2.再次请您明确，`CoreLaunch`仅仅是一个统称，`CoreLaunch`有4种效果任你挑选，并且这4种效果是放在4个文件夹，他们是相互独立的。
+#### 2.再次请您明确，`CoreLaunch`仅仅是一个统称，`CoreLaunch`有5种效果任你挑选，并且这4种效果是放在5个文件夹，他们是相互独立的。
 
 > .Lite版<br/>
 > .Plus版<br/>
 > .Cool版<br/>
 > .Pro版<br/>
+> .Flip版<br/>
 
 #### 3.一句代码集成请放在AppDelegate中的window成为keyWindow之后即可。
 
-注：您只需使用CoreLaunch的4 in 1合集其中任一一个即可。并且他们之前没有任何耦合性，完全可以单独使用。
+注：您只需使用CoreLaunch的5 in 1合集其中任一一个即可。并且他们之前没有任何耦合性，完全可以单独使用。
 
 
 <br/><br/><br/>
@@ -64,6 +65,16 @@
     [CoreLaunchPro animWithWindow:self.window image:nil];
 
 ![image](https://github.com/CharlinFeng/Resource/blob/master/CoreLaunch/4.gif)<br /><br />
+
+<br/><br/>
+#### 5. Flip版
+
+##### 注：本版本使用了各种延时不停的删除增加补充场景界面以实现效果，比较有趣。
+
+    /** Flip版本 */
+    [CoreLaunchFlip animWithWindow:self.window image:nil];
+
+![image](https://github.com/CharlinFeng/Resource/blob/master/CoreLaunch/5.gif)<br /><br />
 
 
 #### 注：每个方法都可传image，这是一种长远考虑，涉及根控制器切换与版本新特性，当前您只需传nil即可。
